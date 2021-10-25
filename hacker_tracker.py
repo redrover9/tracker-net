@@ -9,7 +9,7 @@ twilio_cli = Client(account_SID, auth_token)
 twilio_num = "<num>" #replace with twilio number
 phone_num = "<num>" #replace with personal number
 
-f = open("auth.log", "r")
+f = open("/var/log/auth.log", "r")
 connected_ips = ""
 for line in f:
     has_connected = ""
